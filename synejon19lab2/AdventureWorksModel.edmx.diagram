@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fab1057fa821425496b8bef750775ada" Name="Diagram1">
+        <EntityTypeShape EntityType="AdventureWorks2019Model.Department" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.Employee" Width="1.5" PointX="5.375" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.EmployeeDepartmentHistory" Width="1.5" PointX="3.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.EmployeePayHistory" Width="1.75" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.JobCandidate" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.Shift" Width="1.5" PointX="1" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_EmployeeDepartmentHistory_Department_DepartmentID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_EmployeePayHistory_Employee_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_JobCandidate_Employee_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_EmployeeDepartmentHistory_Shift_ShiftID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.Address" Width="1.5" PointX="3.5" PointY="19" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.AddressType" Width="1.5" PointX="1.25" PointY="13.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.BusinessEntity" Width="1.5" PointX="0.5" PointY="6.125" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.BusinessEntityAddress" Width="1.5" PointX="0.75" PointY="10" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.BusinessEntityContact" Width="1.5" PointX="7.25" PointY="5.25" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.ContactType" Width="1.5" PointX="5.75" PointY="16.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.CountryRegion" Width="1.5" PointX="3.5" PointY="27.625" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.EmailAddress" Width="1.5" PointX="2.625" PointY="8.875" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.Password" Width="1.5" PointX="5.25" PointY="8.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.Person" Width="1.5" PointX="3.125" PointY="4" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.PersonPhone" Width="1.5" PointX="4.25" PointY="10.75" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.PhoneNumberType" Width="1.5" PointX="4" PointY="13.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.StateProvince" Width="1.5" PointX="3.5" PointY="23.125" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_Employee_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_Address_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_BusinessEntityAddress_Address_AddressID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_BusinessEntityAddress_AddressType_AddressTypeID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_Person_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_BusinessEntityContact_ContactType_ContactTypeID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_BusinessEntityContact_Person_PersonID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_StateProvince_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_EmailAddress_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_Password_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_PersonPhone_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.AspNetUsers" Width="1.5" PointX="7.375" PointY="8.75" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model.DatabaseLog" Width="1.5" PointX="9.75" PointY="1.625" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

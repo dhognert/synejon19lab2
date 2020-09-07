@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bdb0c5577737411a94ae191a43bf49a8" Name="Diagram1">
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.DatabaseLog" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.ErrorLog" Width="1.5" PointX="3.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.CountryRegionCurrency" Width="1.5" PointX="7.5" PointY="7.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.CreditCard" Width="1.5" PointX="7.5" PointY="19.5" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.Currency" Width="1.5" PointX="5.25" PointY="11.25" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.CurrencyRate" Width="1.5" PointX="7.5" PointY="10.875" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.Customer" Width="1.5" PointX="7.5" PointY="15.125" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.PersonCreditCard" Width="1.5" PointX="7.5" PointY="23.125" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesOrderDetail" Width="1.5" PointX="11.875" PointY="11.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesOrderHeader" Width="1.5" PointX="9.75" PointY="12.25" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesOrderHeaderSalesReason" Width="1.5" PointX="12" PointY="15" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesPerson" Width="1.5" PointX="3" PointY="16" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesPersonQuotaHistory" Width="1.5" PointX="5.25" PointY="21.625" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesReason" Width="1.5" PointX="9.75" PointY="21" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesTaxRate" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesTerritory" Width="1.5" PointX="0.75" PointY="12.25" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SalesTerritoryHistory" Width="1.5" PointX="5.25" PointY="14.75" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.ShoppingCartItem" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SpecialOffer" Width="1.5" PointX="15.125" PointY="11.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.SpecialOfferProduct" Width="1.5" PointX="13.5" PointY="11.375" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.Store" Width="1.5" PointX="5.25" PointY="18.375" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_CountryRegionCurrency_Currency_CurrencyCode" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_PersonCreditCard_CreditCard_CreditCardID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_CreditCard_CreditCardID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_CurrencyRate_Currency_FromCurrencyCode" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_CurrencyRate_Currency_ToCurrencyCode" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Customer_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Customer_Store_StoreID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_Customer_CustomerID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_SalesPerson_SalesPersonID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesPerson_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Store_SalesPerson_SalesPersonID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.Address" Width="1.5" PointX="20.125" PointY="19" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.AddressType" Width="1.5" PointX="25.125" PointY="36.125" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.BusinessEntity" Width="1.5" PointX="17.875" PointY="32.875" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.BusinessEntityAddress" Width="1.5" PointX="27.375" PointY="30.875" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.BusinessEntityContact" Width="1.5" PointX="23.125" PointY="39.25" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.ContactType" Width="1.5" PointX="20.875" PointY="41.625" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.CountryRegion" Width="1.5" PointX="13.375" PointY="23" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.EmailAddress" Width="1.5" PointX="17.375" PointY="40.625" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.Password" Width="1.5" PointX="17.375" PointY="36.875" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.Person" Width="1.5" PointX="15.125" PointY="29.875" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.PersonPhone" Width="1.5" PointX="20.375" PointY="38.25" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.PhoneNumberType" Width="1.5" PointX="18.125" PointY="44.5" />
+        <EntityTypeShape EntityType="AdventureWorks2019Model1.StateProvince" Width="1.5" PointX="17.875" PointY="24.125" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Address_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_BusinessEntityAddress_Address_AddressID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_Address_BillToAddressID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesOrderHeader_Address_ShipToAddressID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_BusinessEntityAddress_AddressType_AddressTypeID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Person_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Store_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_BusinessEntityContact_ContactType_ContactTypeID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_BusinessEntityContact_Person_PersonID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesTerritory_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_StateProvince_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_EmailAddress_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Password_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_Customer_Person_PersonID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_PersonCreditCard_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_PersonPhone_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_SalesTaxRate_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AdventureWorks2019Model1.FK_StateProvince_SalesTerritory_TerritoryID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
